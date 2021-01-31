@@ -88,28 +88,28 @@ public final class BoxesRunTime
     }
 
     public static byte unboxToByte(Object b) {
-        return b == null ? 0 : ((java.lang.Byte)b).byteValue();
+        return b == null ? 0 : ((java.lang.Number)b).byteValue();
     }
 
     public static short unboxToShort(Object s) {
-        return s == null ? 0 : ((java.lang.Short)s).shortValue();
+        return s == null ? 0 : ((java.lang.Number)s).shortValue();
     }
 
     public static int unboxToInt(Object i) {
-        return i == null ? 0 : ((java.lang.Integer)i).intValue();
+        return i == null ? 0 : ((java.lang.Number)i).intValue();
     }
 
     public static long unboxToLong(Object l) {
-        return l == null ? 0 : ((java.lang.Long)l).longValue();
+        return l == null ? 0 : ((java.lang.Number)l).longValue();
     }
 
     public static float unboxToFloat(Object f) {
-        return f == null ? 0.0f : ((java.lang.Float)f).floatValue();
+        return f == null ? 0.0f : ((java.lang.Number)f).floatValue();
     }
 
     public static double unboxToDouble(Object d) {
         //        System.out.println("unbox " + d);
-        return d == null ? 0.0d : ((java.lang.Double)d).doubleValue();
+        return d == null ? 0.0d : ((java.lang.Number)d).doubleValue();
     }
 
     /* COMPARISON ... COMPARISON ... COMPARISON ... COMPARISON ... COMPARISON ... COMPARISON */
